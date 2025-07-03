@@ -9,6 +9,7 @@ public class Race {
         for (Car car : cars) {
             int distance = 24 * car.speed;
             if (distance > maxDistantce) {
+                maxDistantce = distance;
                 this.leader = car.name;
             }
         }
